@@ -45,6 +45,14 @@ public class PositionTest {
 		assertTrue(p.equals(new Position(0,0)));
 		
 	}
+	
+	@Test
+	void testEquals() {
+		Position other = new Position(0,0);
+		assertEquals(p.getRow() == other.getRow()
+				&& p.getColumn() == other.getColumn(),p.equals(other));
+		
+	}
 
 	@Test
 	void testIsAdjacentTo() {
@@ -57,11 +65,15 @@ public class PositionTest {
 	@Test
 	void testOccupy() {
 		assertFalse(p.isOccupied());
+		p.occupy();
+		assertTrue(p.isOccupied());
 	}
 
 	@Test
 	void testShoot() {
 		assertFalse(p.isHit());
+		p.shoot();
+		assertTrue(p.isHit());
 	}
 
 	@Test

@@ -75,6 +75,7 @@ public class FleetTest {
 		List<IShip> l = new ArrayList<IShip>();
 		l.add(b);
 		assertEquals(b,f.shipAt(new Position(0, 0)));
+		assertEquals(null, f.shipAt(new Position(0, 3)));
 	}
 
 }
