@@ -8,18 +8,17 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import battleship.Caravel;
-import battleship.Carrack;
 import battleship.Compass;
+import battleship.Frigate;
+import battleship.Galleon;
 import battleship.Position;
 import battleship.Ship;
 
-class CarrackTest {
-	Ship carrack;
-	Ship carrack1;
-	Ship carrack2;
-	Ship carrack3;
-	
+public class GalleonTest {
+	Ship galleon;
+	Ship galleon1;
+	Ship galleon2;
+	Ship galleon3;
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
@@ -30,23 +29,22 @@ class CarrackTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		carrack = new Carrack(Compass.EAST, new Position(1, 0));
-		carrack1 = new Carrack(Compass.NORTH, new Position(2, 3));
-		carrack2 = new Carrack(Compass.WEST, new Position(4, 4));
-		carrack3 = new Carrack(Compass.SOUTH, new Position(5, 1));
-		
+		galleon = new Galleon(Compass.EAST, new Position(1, 0));
+		galleon1 = new Galleon(Compass.WEST, new Position(3, 3));
+		galleon2 = new Galleon(Compass.NORTH, new Position(7, 2));
+		galleon3 = new Galleon(Compass.SOUTH, new Position(9, 6));
 	}
 
 	@AfterEach
-	void tearDown()  throws Exception {
+	void tearDown() throws Exception {
 	}
 
 	@Test
 	final void testGetSize() {
-		assertEquals(3,  carrack.getSize());
-		assertEquals(3, carrack1.getSize());
-		assertEquals(3, carrack2.getSize());
-		assertEquals(3, carrack3.getSize());
+		assertEquals(5, galleon.getSize());
+		assertEquals(5, galleon1.getSize());
+		assertEquals(5, galleon2.getSize());
+		assertEquals(5, galleon3.getSize());
 	}
 
 }

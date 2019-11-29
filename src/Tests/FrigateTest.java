@@ -14,7 +14,7 @@ import battleship.Frigate;
 import battleship.Position;
 import battleship.Ship;
 
-class FrigateTest {
+public class FrigateTest {
 	Ship frigate;
 	Ship frigate1;
 	Ship frigate2;
