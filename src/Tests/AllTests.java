@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(JUnitPlatform.class)
-@SelectClasses({})
+@SelectClasses({TestPosition.class, TestBarge.class,TestCaravel.class, TestCarrack.class,TestFleet.class, TestFrigate.class,TestGalleon.class, TestGame.class, })
 public class AllTests {
 
 }
