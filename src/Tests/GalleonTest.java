@@ -14,7 +14,7 @@ import battleship.Galleon;
 import battleship.Position;
 import battleship.Ship;
 
-public class GalleonTest {
+public class  GalleonTest {
 	Ship galleon;
 	Ship galleon1;
 	Ship galleon2;
