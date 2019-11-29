@@ -50,12 +50,15 @@ public class FleetTest {
 		f.addShip(b);
 		List<IShip> l = new ArrayList<IShip>();
 		l.add(b);
-		assertEquals(l,f.listShipsLike("barge"));
+		assertEquals(l,f.listShipsLike(b.getCategory()));
 	}
 
 	@Test
 	void testListFloatingShips() {
-		fail("Not yet implemented");
+		f.addShip(b);
+		List<IShip> l = new ArrayList<IShip>();
+		l.add(b);
+		assertEquals(l,f.listFloatingShips());
 	}
 
 	@Test
@@ -68,7 +71,10 @@ public class FleetTest {
 
 	@Test
 	void testShipAt() {
-		fail("Not yet implemented");
+		f.addShip(b);
+		List<IShip> l = new ArrayList<IShip>();
+		l.add(b);
+		assertEquals(b,f.shipAt(new Position(0, 0)));
 	}
 
 }
