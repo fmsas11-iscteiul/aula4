@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import battleship.Position;
 
-public class TestPosition {
+public class PositionTest {
 	Position p;
 
 	@BeforeAll
