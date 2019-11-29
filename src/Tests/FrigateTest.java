@@ -21,7 +21,7 @@ class FrigateTest {
 	Ship frigate3;
 
 	@BeforeAll
-	static void  setUpBeforeClass() throws Exception {
+	static void   setUpBeforeClass() throws Exception {
 	}
 
 	@AfterAll
