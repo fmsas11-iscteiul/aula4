@@ -43,7 +43,7 @@ class CarrackTest {
 
 	@Test
 	final void testGetSize() {
-		assertEquals(3, carrack.getSize());
+		assertEquals(3,  carrack.getSize());
 		assertEquals(3, carrack1.getSize());
 		assertEquals(3, carrack2.getSize());
 		assertEquals(3, carrack3.getSize());

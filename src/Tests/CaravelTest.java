@@ -28,7 +28,7 @@ public class CaravelTest {
 	}
 
 	@BeforeEach
-	void setUp() throws Exception {
+	void setUp()  throws Exception {
 		caravel = new Caravel(Compass.NORTH, new Position(4, 6));
 		caravel1 = new Caravel(Compass.EAST, new Position(2, 3));
 		caravel2 = new Caravel(Compass.WEST, new Position(0, 4));

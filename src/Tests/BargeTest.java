@@ -26,7 +26,7 @@ public class BargeTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		barge = new Barge(Compass.WEST, new Position(2, 3));
+		barge =  new Barge(Compass.WEST, new Position(2, 3));
 	}
 
 	@AfterEach

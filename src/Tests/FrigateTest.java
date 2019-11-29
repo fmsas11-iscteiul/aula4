@@ -42,7 +42,7 @@ class FrigateTest {
 
 	@Test
 	final void testGetSize() {
-		assertEquals(4, frigate.getSize());
+		assertEquals(4,  frigate.getSize());
 		assertEquals(4, frigate1.getSize());
 		assertEquals(4, frigate2.getSize());
 		assertEquals(4, frigate3.getSize());
